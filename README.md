@@ -1,0 +1,2 @@
+readme 
+selecty_autotests
