@@ -3,6 +3,7 @@ package tests;
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.logevents.SelenideLogger;
+import data.TestData;
 import helpers.Attach;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.*;
@@ -10,11 +11,12 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 
 import pages.MainPage;
 
+
 import java.util.Map;
 
 public class TestBase {
-
     MainPage mainPage = new MainPage();
+    TestData data = new TestData();
 
     @BeforeAll
     static void beforeAll() {

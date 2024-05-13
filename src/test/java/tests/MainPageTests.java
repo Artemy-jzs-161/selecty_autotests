@@ -1,35 +1,85 @@
 package tests;
 
 import io.qameta.allure.*;
-
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Tag;
-import org.junit.jupiter.api.Tags;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 
 @Tags({@Tag("first_test"), @Tag("second_test")})
+@Owner("Artemy-jzs-161")
 public class MainPageTests extends TestBase {
-    @Feature("Какая то фича")
-    @Story("Какаято стори Practice Form")
-    @Owner("Artemy-jzs-161")
+
     @Severity(SeverityLevel.CRITICAL)
-    @DisplayName("Проверка перехода на страницу информации о компании с главной страницы сайта")
+    @DisplayName("Проверить, что стартовая анимация закончилась")
     @Test
-    void menuItemExistInMenuTest() {
+    void endDownLoadPageTest() {
         mainPage
                 .openPage()
-                .verifyElementsAreLoaded();
+                .checkEndDownLoadPage();
     }
 
-    @Owner("Artemy-jzs-161")
-    @DisplayName("Проверка адреса и телефонного номера")
-    @Tag("tag")
+    @Severity(SeverityLevel.CRITICAL)
+    @DisplayName("Проверка телефонного номера на главной странице")
     @Test
-    public void phoneAndAddressAreCorrectTest() {
+    void checkContactPhoneTest() {
         mainPage
                 .openPage()
-                .checkContactPhone("+7 (499) 288 87 71")
-                .checkContactAddress("г. Москва, Садовническая ул. 14, с. 2, 6 этаж (БЦ Кристалл-плаза)");
+                .checkContactPhone(data.getContactPhone());
+    }
 
+    @Severity(SeverityLevel.CRITICAL)
+    @DisplayName("Проверка адреса на главной странице")
+    @Test
+    void checkContactAddressTest() {
+        mainPage
+                .openPage()
+                .checkContactAddress(data.getContactAddress());
+    }
+
+    @Severity(SeverityLevel.CRITICAL)
+    @DisplayName("Проверка заголовка на главной странице русскоязычной версии сайта")
+    @Test
+    void checkRuTitleTest() {
+        mainPage
+                .openPage()
+                .clickRuLanguageLink()
+                .checkMainPageText(data.getRuTitleText());
+    }
+
+    @Severity(SeverityLevel.CRITICAL)
+    @DisplayName("Проверка заголовка на главной странице англоязычной версии сайта")
+    @Test
+    void checkEnTitleTest() {
+        mainPage
+                .openPage()
+                .clickEnLanguageLink()
+                .checkMainPageText(data.getEnTitleText());
+    }
+
+    @Severity(SeverityLevel.CRITICAL)
+    @DisplayName("Проверка ссылок на социальные сети")
+    @Test
+    public void checkSocialLinksHref() {
+        mainPage
+                .openPage()
+                .checkPartOfSocialLinksHref(data.getExpectedSocialLinks());
+    }
+
+    @Severity(SeverityLevel.CRITICAL)
+    @DisplayName("Проверка ссылок навигационной панели на русскоязычной версии сайта")
+    @Test
+    public void checkNavBarLinksRuLanguageText() {
+        mainPage
+                .openPage()
+                .clickRuLanguageLink()
+                .checkNavBarLinksText(data.getRuLanguageLinkText());
+    }
+
+    @Severity(SeverityLevel.CRITICAL)
+    @DisplayName("Проверка ссылок навигационной панели на англоязычной версии сайта")
+    @Test
+    public void checkNavBarLinksEnLanguageText() {
+        mainPage
+                .openPage()
+                .clickEnLanguageLink()
+                .checkNavBarLinksText(data.getEnLanguageLinkText());
     }
 }
