@@ -23,6 +23,7 @@ public class TestBase {
         Configuration.browser = System.getProperty("browser", "chrome");
         Configuration.baseUrl = "https://selecty.ru";
         Configuration.browserSize = System.getProperty("browser_size", "1920x1080");
+        Configuration.browserVersion = System.getProperty("browser_version", "122.0");
         Configuration.pageLoadStrategy = "eager";
         Configuration.remote = "https://user1:1234@" +
                 System.getProperty("remote_url", "selenoid.autotests.cloud") + "/wd/hub";
