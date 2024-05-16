@@ -102,36 +102,36 @@ ${TASK}
 ### По результатам каждого запуска тестов в Jenkins создается Allure отчет с подробной информацией по каждому пройденному тесту.
 
 ### Основная страница отчета
-![image](/design/images/allure_report2.png)
+![image](/readme_files/images/allure_dashboard.png)
 
 ### Тест-кейсы
-![image](/design/images/allure_report.png)
+![image](/readme_files/images/allure_report.png)
 
 <a id="allure-testops"></a>
 ## <img alt="Allure" height="25" src="readme_files/icons/Allure_Report.png" width="25"/></a>Интеграция с <a target="_blank" href="https://allure.autotests.cloud/project/4209/dashboards">Allure TestOps</a>
 ### Полная статистика по прохождению тест-кейсов, отчёты и приложения к ним хранятся в Allure TestOps(запрос доступа admin@qa.guru).
 
 ### **Allure TestOps Dashboard**
-![image](/design/images/allure_dashboard.png)
+![image](/readme_files/images/allure_testops_dash.png)
 
 ### **Автоматизированные тест-кейсы**
-![image](/design/images/allure_auto.png)
+![image](/readme_files/images/allure_auto_TK.png)
 
 ### **Ручные тест-кейсы**
-![image](/design/images/allure_manual.png)
+![image](/readme_files/images/allure_manual_TK.png)
 
 <a id="jira"></a>
 ## <img alt="Jira" height="25" src="readme_files/icons/jira-original-wordmark.svg" width="25"/></a> Интеграция с <a target="_blank" href="https://jira.autotests.cloud/browse/HOMEWORK-1207">Jira</a>
 
 - Реализована интеграция Allure TestOps с Jira, в тикете отображается информация, какие тест-кейсы были написаны в рамках задачи и результат их прогона.
 
-![image](/design/images/jira.png)
+![image](/readme_files/images/jira.png)
 
 <a id="telegram"></a>
 ## <img alt="Allure" height="25" src="readme_files/icons/Telegram.png" width="25"/></a> Уведомление в Telegram при помощи бота
 - После завершения сборки, бот созданный в Telegram, автоматически обрабатывает и отправляет сообщение с результатом.
 
-![image](/design/images/telegramBot.png)
+![image](/readme_files/images/telegram.png)
 
 <a id="video"></a>
 ## <img alt="Selenoid" height="25" src="readme_files/icons/Selenoid.png" width="25"/></a>Видео примера запуска тестов в Selenoid
