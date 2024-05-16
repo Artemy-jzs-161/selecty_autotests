@@ -43,7 +43,6 @@ public class MainPageTests extends TestBase {
     void checkRuTitleTest() {
         mainPage
                 .openPage()
-                .clickRuLanguageLink()
                 .checkMainPageText(data.getRuTitleText());
     }
 
@@ -75,7 +74,6 @@ public class MainPageTests extends TestBase {
     public void checkNavBarLinksRuLanguageText() {
         mainPage
                 .openPage()
-                .clickRuLanguageLink()
                 .checkNavBarLinksText(data.getRuLanguageLinkText());
     }
 
