@@ -55,13 +55,20 @@ tasks.withType(Test) {
     }
 }
 
-task first_tests(type: Test) {
+task eng_tests(type: Test) {
     useJUnitPlatform {
-        includeTags("first_test")
+        includeTags("eng_test")
     }
 }
-task second_tests(type: Test) {
+
+task ru_tests(type: Test) {
     useJUnitPlatform {
-        includeTags("second_test")
+        includeTags("ru_test")
+    }
+}
+
+task all_tests(type: Test) {
+    useJUnitPlatform {
+        includeTags("all_tests")
     }
 }

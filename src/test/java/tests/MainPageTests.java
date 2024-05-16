@@ -3,10 +3,11 @@ package tests;
 import io.qameta.allure.*;
 import org.junit.jupiter.api.*;
 
-@Tags({@Tag("first_test"), @Tag("second_test")})
+@Tags({@Tag("all_tests"),})
 @Owner("Artemy-jzs-161")
 public class MainPageTests extends TestBase {
 
+    @Tag("ru_test")
     @Severity(SeverityLevel.CRITICAL)
     @DisplayName("Проверить, что стартовая анимация закончилась")
     @Test
@@ -16,6 +17,7 @@ public class MainPageTests extends TestBase {
                 .checkEndDownLoadPage();
     }
 
+    @Tag("ru_test")
     @Severity(SeverityLevel.CRITICAL)
     @DisplayName("Проверка телефонного номера на главной странице")
     @Test
@@ -24,7 +26,7 @@ public class MainPageTests extends TestBase {
                 .openPage()
                 .checkContactPhone(data.getContactPhone());
     }
-
+    @Tag("ru_test")
     @Severity(SeverityLevel.CRITICAL)
     @DisplayName("Проверка адреса на главной странице")
     @Test
@@ -34,6 +36,7 @@ public class MainPageTests extends TestBase {
                 .checkContactAddress(data.getContactAddress());
     }
 
+    @Tag("ru_test")
     @Severity(SeverityLevel.CRITICAL)
     @DisplayName("Проверка заголовка на главной странице русскоязычной версии сайта")
     @Test
@@ -44,6 +47,7 @@ public class MainPageTests extends TestBase {
                 .checkMainPageText(data.getRuTitleText());
     }
 
+    @Tag("eng_test")
     @Severity(SeverityLevel.CRITICAL)
     @DisplayName("Проверка заголовка на главной странице англоязычной версии сайта")
     @Test
@@ -54,6 +58,7 @@ public class MainPageTests extends TestBase {
                 .checkMainPageText(data.getEnTitleText());
     }
 
+    @Tag("ru_test")
     @Severity(SeverityLevel.CRITICAL)
     @DisplayName("Проверка ссылок на социальные сети")
     @Test
@@ -63,6 +68,7 @@ public class MainPageTests extends TestBase {
                 .checkPartOfSocialLinksHref(data.getExpectedSocialLinks());
     }
 
+    @Tag("ru_test")
     @Severity(SeverityLevel.CRITICAL)
     @DisplayName("Проверка ссылок навигационной панели на русскоязычной версии сайта")
     @Test
@@ -73,6 +79,7 @@ public class MainPageTests extends TestBase {
                 .checkNavBarLinksText(data.getRuLanguageLinkText());
     }
 
+    @Tag("eng_test")
     @Severity(SeverityLevel.CRITICAL)
     @DisplayName("Проверка ссылок навигационной панели на англоязычной версии сайта")
     @Test
