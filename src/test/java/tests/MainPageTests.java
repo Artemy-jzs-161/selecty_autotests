@@ -3,7 +3,7 @@ package tests;
 import io.qameta.allure.*;
 import org.junit.jupiter.api.*;
 
-@Tags({@Tag("all_tests"),})
+@Tag("all_tests")
 @Owner("Artemy-jzs-161")
 public class MainPageTests extends TestBase {
 
@@ -26,6 +26,7 @@ public class MainPageTests extends TestBase {
                 .openPage()
                 .checkContactPhone(data.getContactPhone());
     }
+
     @Tag("ru_test")
     @Severity(SeverityLevel.CRITICAL)
     @DisplayName("Проверка адреса на главной странице")

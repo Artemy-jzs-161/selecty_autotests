@@ -10,7 +10,7 @@ public class TestData {
 
     private String ruTitleText = "ЦИФРОВАЯ ТРАНСФОРМАЦИЯ ПОД КЛЮЧ";
 
-    private String enTitleText = "END-TO-END DIGITAL TRANSFORMATION";
+    private String enTitleText = "End-to-end digital transformation";
 
     private List<String> ruLanguageLinkText = List.of("Selecty", "Услуги", "Карьера", "Блог", "Контакты");
 
