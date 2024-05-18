@@ -136,5 +136,5 @@ ${TASK}
 <a id="video"></a>
 ## <img alt="Selenoid" height="25" src="readme_files/icons/Selenoid.png" width="25"/></a>Видео примера запуска тестов в Selenoid
 
-<img title="Selenoid Video" src="design/images/video.gif" width="550" height="350"  alt="video">   
+<img title="Selenoid Video" src="/readme_files/images/selecty_video.gif" width="550" height="350"  alt="video">   
 
