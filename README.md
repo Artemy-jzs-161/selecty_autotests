@@ -2,7 +2,7 @@
 
 <html>
  <body> 
-   <p><a href="https://selecty.ru/"><img src="readme_files/images/logo.jpeg" width="800" 
+   <p><a href="https://selecty.ru/"><img src="readme_files/images/selecty.png" width="800" 
    height="300" alt="Selecty"></a></p>
  </body> 
 </html>
@@ -69,7 +69,7 @@
 <a id="jenkins"></a>
 ## <img alt="Jenkins" height="25" src="readme_files/icons/jenkins-original.svg" width="25"/></a><a name="Сборка"></a>Сборка в [Jenkins](https://jenkins.autotests.cloud/job/Selecty_autotets/)</a>
 
- ![image](/readme_files/images/Jenkins.png)
+ ![image](/readme_files/images/jenkins.png)
 
  - **TASK** - запуск задачи, по умолчанию запускаются все тесты first_tests
 - **BROWSER** - браузер, по умолчанию chrome
@@ -102,10 +102,10 @@ ${TASK}
 ### По результатам каждого запуска тестов в Jenkins создается Allure отчет с подробной информацией по каждому пройденному тесту.
 
 ### Основная страница отчета
-![image](/readme_files/images/allure_dashboard.png)
+![image](/readme_files/images/allure_report.png)
 
 ### Тест-кейсы
-![image](/readme_files/images/allure_report.png)
+![image](/readme_files/images/allure_tests.png)
 
 <a id="allure-testops"></a>
 ## <img alt="Allure" height="25" src="readme_files/icons/Allure_Report.png" width="25"/></a>Интеграция с <a target="_blank" href="https://allure.autotests.cloud/project/4209/dashboards">Allure TestOps</a>
@@ -115,10 +115,10 @@ ${TASK}
 ![image](/readme_files/images/allure_testops_dash.png)
 
 ### **Автоматизированные тест-кейсы**
-![image](/readme_files/images/allure_auto_TK.png)
+![image](/readme_files/images/allure_testops_auto.png)
 
 ### **Ручные тест-кейсы**
-![image](/readme_files/images/allure_manual_TK.png)
+![image](/readme_files/images/allure_testops_manual.png)
 
 <a id="jira"></a>
 ## <img alt="Jira" height="25" src="readme_files/icons/jira-original-wordmark.svg" width="25"/></a> Интеграция с <a target="_blank" href="https://jira.autotests.cloud/browse/HOMEWORK-1207">Jira</a>
